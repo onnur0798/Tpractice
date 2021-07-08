@@ -1,8 +1,6 @@
 resource "aws_instance" "myfirst" {
   ami = "${var.ami}"
-  availability_zone = "${var.region}"
-
-  instance_type = "${var.instance_type}"
+    instance_type = "${var.instance_type}"
   tags = {
     name ="myfirst"
   }
